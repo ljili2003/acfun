@@ -22,8 +22,8 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Build with Maven
         env:
-          acPassToken: ${{ secrets.acPassToken }}
-          authKey: ${{ secrets.authKey }}
+          acPassToken: ${{ secrets.ACPASSTOKEN }}
+          authKey: ${{ secrets.AUTH_KEY }}
           #SERVERPUSHKEY: ${{ secrets.SERVERPUSHKEY }}
           TELEGRAMBOTTOKEN: ${{ secrets.TELEGRAMBOTTOKEN }}
           TELEGRAMCHATID: ${{ secrets.TELEGRAMCHATID }}
